@@ -1,4 +1,5 @@
 
+import os
 import json
 import discord
 from discord.ext import commands
@@ -49,5 +50,5 @@ async def on_message(ctx):
 
     await bot.process_commands(ctx)
 
-
-bot.run(variables["token"])
+token = os.getenv("DISCORD_BOT_TOKEN")
+bot.run(token)
