@@ -1,3 +1,2 @@
 discord
-json
 discord.ext
