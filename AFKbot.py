@@ -1,6 +1,5 @@
 
 import os
-import json
 import discord
 from discord.ext import commands
 import jsonio
@@ -9,10 +8,6 @@ intents = discord.Intents.default()
 intents.members = True
 intents.messages = True
 bot = commands.Bot(command_prefix=".", intents=intents)
-
-file = open('./config.json')
-variables = json.load(file)
-file.close()
 
 @bot.event
 async def on_ready():
