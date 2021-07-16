@@ -32,7 +32,7 @@ async def close(ctx):
 @bot.command()
 async def afk(ctx, message):
     jsonio.write(ctx.message.author.id, message)
-    await ctx.send("AFK for " + ctx.message.author.display_name + "set to " + jsonio.read(ctx.message.author.id))
+    await ctx.send("AFK for " + ctx.message.author.display_name + " set to " + jsonio.read(ctx.message.author.id))
 
 @bot.command()
 async def ping(ctx):
