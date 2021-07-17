@@ -19,7 +19,7 @@ async def on_ready():
 @bot.command()
 async def afk(ctx, *message):
     jsonio.write(ctx.message.author.id, " ".join(message[:]))
-    await ctx.send("AFK for " + ctx.message.author.display_name + " set to " + jsonio.read(ctx.message.author.id))
+    await ctx.send("AFK for " + ctx.message.author.display_name + " set.")
 
 @bot.command()
 async def ping(ctx):
