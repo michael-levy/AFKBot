@@ -16,18 +16,9 @@ async def on_ready():
     if channel:
         await channel.send("I LIVE")
 
-@bot.command(aliases=["quit"])
-@commands.has_role('Command')
-async def close(ctx):
-    """
-    !! Turns off the bot !!
-    """
-    await ctx.send("You AFK'd the AFK bot")
-    await bot.close()
-
 @bot.command()
-async def afk(ctx, message):
-    jsonio.write(ctx.message.author.id, message)
+async def afk(ctx, *message):
+    jsonio.write(ctx.message.author.id, " ".join(message[:])
     await ctx.send("AFK for " + ctx.message.author.display_name + " set to " + jsonio.read(ctx.message.author.id))
 
 @bot.command()
