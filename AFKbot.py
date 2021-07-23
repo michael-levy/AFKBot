@@ -17,8 +17,8 @@ async def on_ready():
         await channel.send("I LIVE")
 
 @bot.command()
-async def afk(ctx, *message):
-    jsonio.write(ctx.message.author.id, " ".join(message[:]))
+async def afk(ctx, *, arg):
+    jsonio.write(ctx.message.author.id, arg)
     await ctx.send("AFK for " + ctx.message.author.display_name + " set.")
 
 @bot.command()
