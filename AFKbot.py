@@ -34,7 +34,7 @@ async def on_message(ctx):
     if jsonio.contains(ctx.author.id):
         jsonio.remove(ctx.author.id)
 
-    if ctx.message.content.contains("I'm Dad"):
+    if "I'm Dad" in ctx.content:
         await ctx.channel.send("NO")
 
     await bot.process_commands(ctx)
