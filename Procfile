@@ -1,1 +1,1 @@
-worker: python AFKbot.py
+worker: python bot.py
