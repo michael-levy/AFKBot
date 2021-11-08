@@ -12,7 +12,7 @@ Find a word with a given syllable, and get points based on it's rarity!
 
 When the bot gives you a syllable, provide an unusual word that contains it! It will give you a ten second timer, so don't take too long!
 
-Points are given based on the [Oxford frequency bands](https://public.oed.com/how-to-use-the-oed/key-to-frequency/). The frequencies are taken from [Google Ngrams](https://books.google.com/ngrams#) and the syllables from [this](https://www.gutenberg.org/ebooks/3204) gutenberg book. 
+Points are given based on the [Oxford frequency bands](https://public.oed.com/how-to-use-the-oed/key-to-frequency/). The frequencies are taken from [Google Ngrams](https://books.google.com/ngrams#) and the syllables from [this](http://www.delphiforfun.org/programs/Syllables.htm) person's list. 
 
 ## Misc Functions
 
