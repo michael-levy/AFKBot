@@ -1,5 +1,7 @@
 # CatBot⁴
 
+This is not CatBot. This is CatBot⁴. CatBot is [here](https://github.com/michaelevy/CatBot). You can't see it though, it's a secret :)
+
 ## Word Game
 
 Find a word with a given syllable, and get points based on it's rarity!
